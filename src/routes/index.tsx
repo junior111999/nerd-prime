@@ -1,12 +1,13 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import Movie from '../pages/Movie/index';
+import Dashboard from '../pages/Dashboard';
+import Repository from '../pages/Repository';
 
 const Routes: React.FC = () => (
   <Switch>
-    {/* <Route path="/" exact component={} /> */}
-    <Route path="/Movie" component={Movie} />
+    <Route path="/Github-Explorer" exact component={Dashboard} />
+    <Route path="/repositories/:repository+" component={Repository} />
   </Switch>
 );
 
