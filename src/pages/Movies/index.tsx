@@ -1,5 +1,11 @@
 import React from 'react';
 
+import { Card, Button } from 'react-bootstrap';
+
+import CardMovie from '../../components/CardMovie'
+
+// import { Container, Row, Col } from 'react-bootstrap';
+
 // import api from '../../services/api';
 
 // import { } from './styles';
@@ -7,7 +13,7 @@ import React from 'react';
 const Movie: React.FC = () => {
   return (
     <>
-      <h1>Detail</h1>
+      <CardMovie></CardMovie>
     </>
   );
 };
