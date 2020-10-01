@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { Card, Button } from 'react-bootstrap';
+//import NavBar from '../../components/NavBar'
 
-import CardMovie from '../../components/CardMovie'
+import CardMovie from '../../components/CardMovie';
 
 // import { Container, Row, Col } from 'react-bootstrap';
 
@@ -12,9 +12,12 @@ import CardMovie from '../../components/CardMovie'
 
 const Movie: React.FC = () => {
   return (
-    <>
-      <CardMovie></CardMovie>
-    </>
+      <>
+      <div className="container">
+        <CardMovie></CardMovie>
+      </div>
+      
+      </>
   );
 };
 
