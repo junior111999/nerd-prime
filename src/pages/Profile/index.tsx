@@ -6,8 +6,6 @@ import { Card, Button } from 'react-bootstrap';
 
 // import { } from './styles';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-
 const Profile: React.FC = () => {
     return (
 
