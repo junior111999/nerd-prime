@@ -2,21 +2,27 @@ import React from 'react';
 
 import { Card, Button } from 'react-bootstrap';
 
+import './styles.css'
 
 const CardMovie: React.FC = () => {
-    return (
-      <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src="holder.js/100px180" />
-        <Card.Body>
-          <Card.Title>Card Title</Card.Title>
-          <Card.Text>
-            Some quick example text to build on the card title and make up the bulk of
-            the card's content.
-      </Card.Text>
-          <Button variant="primary">Go somewhere</Button>
-        </Card.Body>
-      </Card>
-    );
-  };
-  
-  export default CardMovie;
+  return (
+    <Card className="movie-card">
+      <Card.Link>
+        <Card.Img
+          className="fadeIn animated card-img-top"
+          variant="top"
+          src="https://avatars2.githubusercontent.com/u/42000522?s=460&u=5dfefd38b0a639067fa46dea2036b8bd6acc4790&v=4" />
+      </Card.Link>
+      <Card.Body className="card-body">
+        <Card.Link>
+          <Card.Text className="card-rating">5.0</Card.Text>
+          <Card.Title className="mb-1 mr-4 card-title">Card Title</Card.Title>
+          <Card.Text className="small mb-0">Genrer</Card.Text>
+        </Card.Link>
+      </Card.Body>
+
+    </Card>
+  );
+};
+
+export default CardMovie;
