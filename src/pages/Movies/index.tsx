@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-import NavBar from '../../components/NavBar'
+import NavBar from '../../components/NavBar';
 
 import CardMovie from '../../components/CardMovie';
 
@@ -11,26 +11,25 @@ import api from '../../services/api';
 // import { } from './styles';
 
 const Movies: React.FC = () => {
-
   const [movies, setMovies] = useState([]);
   useEffect(() => {
     const loadMovies = async () => {
       const list = await api.getMoviesList();
-      console.log(list)
-      //setMovies(list);
+      console.log(list);
+      // setMovies(list);
     };
     loadMovies();
-  }, [movies]);
+  });
   return (
-      <>
+    <>
       <Background>
-        <NavBar></NavBar>
+        <NavBar />
         {movies.map((item) => (
-        <h1>${item}</h1>
-      ))}
-        <CardMovie></CardMovie>
+          <h1>${item}</h1>
+        ))}
+        <CardMovie />
       </Background>
-      </>
+    </>
   );
 };
 
