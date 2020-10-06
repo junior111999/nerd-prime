@@ -1,10 +1,10 @@
 import React from 'react';
 
-import { Card, Button } from 'react-bootstrap';
+import { Media } from 'react-bootstrap';
 
 // import api from '../../services/api';
 
-import { ContainerInfo, Genres, VoteAverage } from './styles';
+import { ContainerInfo, Genres, VoteAverage, Details } from './styles';
 
 const Profile: React.FC = () => {
   return (
@@ -30,11 +30,30 @@ const Profile: React.FC = () => {
             </Genres>
             <VoteAverage>
               <div>
-                <h3>5.8</h3>
+                <p>5.8</p>
               </div>
             </VoteAverage>
           </div>
         </header>
+        <hr />
+        <Details>
+          <h1>Autores</h1>
+          <div>
+            <Media>
+              <img
+                width={100}
+                height={150}
+                className="mr-3"
+                src="http://image.tmdb.org/t/p/w154/xawkWKkgbOx5atAMeFDh9rjHGWt.jpg"
+                alt="banner"
+              />
+              <Media.Body>
+                <h5>Adam Copeland</h5>
+                <p>Jack Reese</p>
+              </Media.Body>
+            </Media>
+          </div>
+        </Details>
       </ContainerInfo>
     </div>
   );
