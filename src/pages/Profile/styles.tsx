@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ContainerInfo = styled.section`
-  margin-top: 150px;
+  margin-top: 100px;
   border: 1px solid #ccc;
   border-radius: 10px;
   z-index: 9999999;
@@ -11,8 +11,8 @@ export const ContainerInfo = styled.section`
     display: flex;
     align-items: center;
     img {
-      width: 150px;
-      height: 200px;
+      width: 170px;
+      height: 250px;
       border-radius: 10%;
     }
     div {
@@ -54,15 +54,31 @@ export const Genres = styled.section`
 `;
 
 export const VoteAverage = styled.section`
+  margin-left: 89%;
   div {
     width: 50px;
     height: 50px;
     border: 5px solid red;
     border-radius: 100%;
 
-    h3 {
+    p {
       font-size: 20px;
       color: #3d3d4d;
+      text-align: center;
     }
+  }
+`;
+
+export const Details = styled.div`
+  margin: 10px;
+  h1 {
+    margin-left: 10px;
+  }
+  div {
+    width: 220px;
+    background-color: #ccc;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
   }
 `;
