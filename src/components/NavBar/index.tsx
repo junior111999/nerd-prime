@@ -1,5 +1,5 @@
 import React from 'react';
-
+//Importacao de todas as libs disponiveis para controle de navegação da página
 import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
 
 
