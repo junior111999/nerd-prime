@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
 
-
+//Componente do navbar
 const NavBar: React.FC = () => {
   const handleSelect = (eventKey: Event) => alert(`selected ${eventKey}`);
 

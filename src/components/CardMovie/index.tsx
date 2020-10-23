@@ -3,7 +3,7 @@ import React from 'react';
 import { Card, Button } from 'react-bootstrap';
 
 import './styles.css'
-
+//componente do card
 const CardMovie: React.FC = () => {
   return (
     <Card className="movie-card">
