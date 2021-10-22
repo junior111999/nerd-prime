@@ -12,7 +12,7 @@ const Profile: React.FC = () => {
       <ContainerInfo>
         <header>
           <img
-            src="https://image.tmdb.org/t/p/w1280/6CoRTJTmijhBLJTUNoVSUNxZMEI.jpg"
+            src="https://avatars.githubusercontent.com/u/56551979?v=4"
             alt="banner"
           />
           <div>
