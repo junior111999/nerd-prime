@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/explicit-function-return-type */
 import axios from 'axios';
 
 const API_KEY = '7e726a6fab6acefcaae69a9da9a2b75e';
@@ -7,7 +8,7 @@ const api = axios.create({
   baseURL: `${API_URL}`,
 });
 
-const request = async (endpoint: any) => {
+const request = async (endpoint: string) => {
   const req = await api.get(endpoint);
   return req;
 };
