@@ -1,9 +1,8 @@
+/* eslint-disable prettier/prettier */
 import React from 'react';
-
 import { Media } from 'react-bootstrap';
 
 // import api from '../../services/api';
-
 import { ContainerInfo, Genres, VoteAverage, Details } from './styles';
 
 const Profile: React.FC = () => {
