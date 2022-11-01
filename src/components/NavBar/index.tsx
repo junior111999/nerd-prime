@@ -1,6 +1,19 @@
+/* eslint-disable prettier/prettier */
+/* eslint-disable no-alert */
+/* eslint-disable prettier/prettier */
+/* eslint-disable @typescript-eslint/explicit-function-return-type */
+/* eslint-disable spaced-comment */
+/* eslint-disable prettier/prettier */
 import React from 'react';
 //Importacao de todas as libs disponiveis para controle de navegação da página
-import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
+import {
+  Navbar,
+  Nav,
+  NavDropdown,
+  Form,
+  FormControl,
+  Button,
+} from 'react-bootstrap';
 
 //Componente do navbar
 const NavBar: React.FC = () => {
